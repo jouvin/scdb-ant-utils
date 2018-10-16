@@ -17,6 +17,10 @@ http://maven.apache.org/maven-v4_0_0.xsd">
     <version>1.59</version>
   </parent>
 
+  <prerequisites>
+      <maven>3.0.1</maven>
+  </prerequisites>
+
   <build>
 
     <sourceDirectory>target/java</sourceDirectory>
@@ -64,7 +68,7 @@ http://maven.apache.org/maven-v4_0_0.xsd">
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jar-plugin</artifactId>
-        <version>2.4</version>
+        <version>2.6</version>
         <configuration>
           <archive>
             <manifest>
@@ -112,7 +116,7 @@ http://maven.apache.org/maven-v4_0_0.xsd">
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>findbugs-maven-plugin</artifactId>
-        <version>3.0.1</version>
+        <version>3.0.5</version>
       </plugin>
     </plugins>
   </reporting>
